@@ -1,0 +1,8 @@
+{
+"name": "friendsbookk".
+"main": "server.js".
+"dependencies": {
+    "bcrypt.js": "^2.4.3"
+}.
+"private": true
+}
