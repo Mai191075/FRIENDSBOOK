@@ -1,0 +1,554 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #2196f3;
+  transition: all .3s ease-in-out;
+}
+
+
+header {
+  background: #2C2C2C;
+  padding: 15px;
+}
+
+header a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+header .fa {
+  color: white;
+  transition: color .2s ease-in-out;
+}
+
+header .fa:hover {
+  color: #2196f3;
+  cursor: pointer;
+}
+
+header .logo-area {
+  display: inline-block;
+  width: 20%;
+  margin-left: -4px;
+  padding-left: 10px;
+}
+
+header .logo-area a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+header .menu {
+  display: inline-block;
+  width: 20%;
+  margin-left: -4px;
+  border-right: 1px solid rgba(255, 255, 255, .3);
+  padding-right: 20px;
+}
+
+header .menu ul li {
+  display: inline-block;
+}
+
+header .menu ul li a {
+  margin-right: 20px;
+}
+
+header .icon-links {
+  display: inline-block;
+  width: 20%;
+  margin-left: -4px;
+}
+
+header .icon-links ul li {
+  display: inline-block;
+}
+
+header .icon-links .quick-options{
+  display: inline-block;
+  margin-left: -4px;
+  padding-left: 100px;
+  padding-right: 100px;
+  border-right: 1px solid rgba(255, 255, 255, .3);
+ 
+}
+
+header .icon-links .privacy {
+  display: inline-block;
+  margin-left: -4px;
+  padding-left: 20px;
+  
+}
+
+header .privacy {
+  display: inline-block;
+  padding-left: 170px;
+  padding-right: 0px;
+}
+
+.logout{
+  display: inline-block;
+  padding-left: 20px;
+  padding-right: 240px;
+}
+
+header .search-area {
+  display: inline-block;
+  float: right;
+  margin-left: -4px;
+}
+
+header .search-area input {
+  background: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid white;
+  color: white;
+}
+
+header .search-area input::placeholder {
+  color: rgba(255, 255, 255, .3);
+  text-transform: capitalize;
+}
+
+header .search-area ul li {
+  display: inline-block;
+}
+
+
+#top-area {
+  height: 400px;
+  padding: 175px 15px 90px 40px;
+  background: url(pexels-lisa-fotios-1083822.jpg) no-repeat center center fixed;
+  background-size: cover;
+}
+
+#top-area .profile-info .pro-pic {
+  padding-left: 10px;
+  display: inline-block;
+}
+
+#top-area .profile-info .pro-pic img{
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+}
+
+#top-area .profile-info .user-desc {
+  display: inline-block;
+  position: absolute;
+  text-align: center;
+  margin-left: 20px;
+  margin-top: 42px;
+}
+
+#top-area .profile-info .user-desc h3 {
+  color: white;
+  font-size: 24px;
+  font-weight: 300;
+  margin-bottom: 5px;
+}
+
+#top-area .profile-info .user-desc a {
+  display: inline-block;
+  font-size: 7px;
+  color: white;
+  margin-bottom: 3px;
+}
+
+#top-area .profile-info .user-desc button {
+  background: rgba(255, 255, 255, .4);
+  border: none;
+  text-transform: uppercase;
+  text-align: center;
+  width: 45%;
+  transition: background .4s ease-in-out;
+}
+
+#top-area .profile-info .user-desc button:hover {
+  background: #2196f3;
+}
+
+
+#top-area .icons-container {
+  float: right;
+  margin-top: 1.5%;
+  margin-right: 3.5%;
+  display: block;
+}
+#top-area .icons-container .icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(https://previews.123rf.com/images/jes2ufoto/jes2ufoto1405/jes2ufoto140500106/28828525-close-up-of-golf-green-grass.jpg)
+  no-repeat center center;
+  background-size: cover;
+  color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-bottom: 60%;
+  transition: all .4s ease-in-out;
+}
+
+#top-area .icons-container .icon-container:hover {
+  color: black;
+}
+
+#top-area .icons-container .icon-container .fas {
+  font-size: 26px;
+}
+
+#top-area .icons-container .icon-container.last {
+  margin-top: 100%;
+  background: #d2d2d2;
+}
+
+#top-area .icons-container .icon-container.last .fas {
+  font-size: 16px;
+}
+
+#top-area .icons-container .icon-container.last:hover {
+  background: #818181;
+  color: white;
+}
+
+#top-area .icons-container .icon-container.football:hover {
+  color: #6F1E00;
+}
+
+#top-area .icons-container .icon-container.court {
+  background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxxx6vpRrc_nNpu-BjxiUqNexznuul0puTy_YMaWbqRwhvskHi) no-repeat center center;
+  background-size: cover;
+}
+
+#top-area .icons-container .icon-container.court:hover {
+  color: #F17900;
+}
+
+#top-area .icons-container .icon-container.tennis-court {
+  background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkBV6R5ufiDXFA0MkR9CGQL-HNsZCDeWzM0xPW3RnFz6MsWX55Qw) no-repeat center center;
+  background-size: cover;
+}
+
+#top-area .icons-container .icon-container.tennis-court:hover {
+  color: #EAFF3D;
+}
+
+#top-area .icons-container .icon-container.track {
+  background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1iXORiEPJZ0PziwrSJhVovOS7zlzDSxSGn_Ib2QC4D2ZiZ6ri) no-repeat center center;
+  background-size: cover;
+}
+
+#top-area .icons-container .icon-container.baseball:hover {
+  color: #DEBFBF;
+}
+
+#top-area .icons-container .icon-container.golf:hover {
+  color: #f5f5f5;
+}
+
+#top-area .icons-container .icon-container.rink {
+  background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6bIiVkGmamNlIuabttYMmDAUePLdqADwGBuUt5jIS9OjXrDAqcA) no-repeat center center;
+  background-size: cover;
+}
+
+#top-area .icons-container .icon-container.slope {
+  background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoJUGMPNDJj5CWcJqkfLt9GXECxaG1GS2vUHWWAegIk1pTpaJd) no-repeat center center;
+  background-size: cover;
+}
+
+
+#content-area {
+  overflow: auto;
+  padding: 50px 0;
+}
+
+
+#content-area .side-feed{
+  float: left;
+  width: 35%;
+  margin: 0 2.5%;
+  max-width: 360.05px;
+}
+
+#content-area .widget-box {
+  background: white;
+  border-radius: 3px;
+  margin-bottom: 15px;
+  box-shadow: 0px 2px 5px -1px rgba(138, 138, 138, 1);
+  overflow: auto;
+}
+
+#content-area .widget-box .head {
+  padding: 15px 15px 0 15px;
+}
+
+#content-area .widget-box .head .widget-icon-container {
+  display: inline-block;
+}
+
+#content-area .widget-box .head .widget-icon {
+  background: #d2d2d2;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#content-area .widget-box .head .widget-icon .fa {
+  font-size: 20px;
+}
+
+#content-area .widget-box .head .widget-title {
+  display: inline-block;
+  padding-left: 5px;
+}
+
+#content-area .widget-box .body {
+  padding-top: 15px;
+}
+
+#content-area .widget-box .bio-body {
+  padding: 15px;
+  line-height: 30px;
+}
+
+#content-area .widget-box .bio-body h6 {
+  font-weight: 500;
+  color: rgba(0, 0, 0, .7)
+}
+
+#content-area .widget-box .bio-body p {
+  font-weight: 300;
+  color: rgba(0, 0, 0, .5)
+}
+
+
+#content-area .main-feed{
+  float: left;
+  width: 55%;
+  margin-top: -40px;
+}
+
+#content-area .main-feed .submenu ul {
+  padding: 0;
+  margin: 0;
+}
+
+#content-area .main-feed .submenu ul li {
+  float: left;
+  width: 20%;
+  text-align: center;
+  font-size: 23px;
+  padding-top: 10px;
+  border-bottom: 3px solid white;
+  transition: all .3s ease-in-out;
+  cursor: pointer;
+  color: gray;
+}
+
+#content-area .main-feed .submenu ul li:hover {
+  border-bottom: 3px solid #2196f3;
+  color: #2196f3;
+}
+
+#content-area .main-feed .submenu ul li:nth-child(5):hover {
+  color: #2196f3;
+  border-bottom: white;
+}
+
+#content-area .main-feed .submenu ul li:nth-child(5) {
+  padding: 23px 0 21px;
+  font-size: 17px;
+  width: 20%;
+  float: right;
+  color: gray;
+}
+
+#content-area .main-feed .submenu ul span {
+  display: block;
+  margin: 10px 0;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+
+#content-area .main-feed .widget-box.post .head {
+  margin-bottom: 15px;
+}
+
+#content-area .main-feed .widget-box.post .head .post-info {
+  display: inline-block;
+  float: left;
+  width: 80%;
+}
+
+#content-area .main-feed .widget-box.post .head .post-info::after {
+  content: ' ';
+  clear: both;
+  display: table;
+}
+
+#content-area .main-feed .widget-box.post .head .post-info .post-date {
+  font-size: 12px;
+}
+
+#content-area .main-feed .widget-box.post .post-body {
+  padding: 15px;
+}
+
+#content-area .main-feed .widget-box.post .post-body .post-img img {
+  width: 100%;
+  background: no-repeat center center;
+}
+
+#content-area .main-feed .widget-box.post .post-body .top-icons {
+  width: 100%;
+  padding: 15px 0;
+}
+
+#content-area .main-feed .widget-box.post .post-body .top-icons .far {
+  font-size: 20px;
+  color: #808080;
+  transition: all .3s ease-in-out;
+}
+
+#content-area .main-feed .widget-box.post .post-body .top-icons .far:hover {
+  color: #2196f3;
+}
+
+#content-area .main-feed .widget-box.post .post-body .top-icons .fa-heart {
+  margin-right: 15px;
+}
+
+#content-area .main-feed .widget-box.post .post-body .top-icons span {
+  float: right;
+}
+
+
+#content-area .main-feed .widget-box.post .body .post-comments {
+  background: #eeeeee;
+  padding: 15px 15px 20px 15px;
+  margin: 0 -15px;
+}
+
+#content-area .main-feed .widget-box.post .body .post-comments .user-img img {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+
+#content-area .main-feed .widget-box.post .body .post-comments .user-img {
+  width: 8%;
+  display: inline-block;
+  overflow: auto;
+  float: left;
+}
+
+#content-area .main-feed .widget-box.post .body .post-comments::after {
+  content: ' ';
+  clear: both;
+  display: table;
+}
+
+#content-area .main-feed .widget-box.post .body .post-comments .user-comment {
+  display: inline-block;
+  float: left;
+  width: 92%;
+  font-size: 13px;
+}
+
+#content-area .main-feed .widget-box.post .body .post-comments .user-comment p {
+  font-size: 12px;
+  color: #808080;
+}
+
+#content-area .main-feed .widget-box.post .body .post-comments .user-comment .user-info {
+  margin: 5px 0 10px 0;
+}
+
+#content-area .main-feed .widget-box.post .body .post-comments .user-comment .user-info .time {
+  color: #808080;
+  font-size: 12px;
+  float: right;
+}
+
+
+
+#content-area .main-feed .widget-box.post .body .post-form {
+  padding-top: 15px;
+}
+
+#content-area .main-feed .widget-box.post .body .post-form .user-img {
+  width: 8%;
+  display: inline-block;
+  overflow: auto;
+  float: left;
+}
+
+#content-area .main-feed .widget-box.post .body .post-form::after {
+  content: ' ';
+  clear: both;
+  display: table;
+}
+
+#content-area .main-feed .widget-box.post .body .post-form .user-img img {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+
+#content-area .main-feed .widget-box.post .body .post-form .form-info {
+  display: inline-block;
+  float: left;
+  width: 92%;
+  font-size: 14px;
+  padding: 10px 0;
+  border-bottom: 1px solid #a8a8a8;
+}
+
+#content-area .main-feed .widget-box.post .body .post-form .form-info input {
+  width: 80%;
+  border: none;
+  outline: none;
+  font-size: 12px;
+}
+
+#content-area .main-feed .widget-box.post .body .post-form .form-info .icons {
+  display: inline-block;
+  float: right;
+}
+
+#content-area .main-feed .widget-box.post .body .post-form .form-info .icons i {
+ font-size: 20px;
+ margin-right: 15px;
+ color: #a8a8a8;
+ transition: color .3s ease-in-out;
+}
+
+#content-area .main-feed .widget-box.post .body .post-form .form-info .icons i:hover {
+ font-size: 20px;
+ margin-right: 15px;
+ color: #2196f3;
+}
+
+#content-area .main-feed .widget-box.post .body .post-form img {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  display: inline-block;
+}
