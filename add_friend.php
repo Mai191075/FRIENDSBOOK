@@ -20,7 +20,7 @@ if ( isset($_SESSION['user_name']) && !empty($_GET) )
 	}
 	else
 	{
-		echo "Error: " .  "<br>" . mysqli_error($conn);
+		echo "Error: " . mysqli_error($conn);
 		header("refresh:.9;url= home.php");
 	}
 	

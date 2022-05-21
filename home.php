@@ -243,7 +243,6 @@ if ( !isset( $_SESSION['user_name'] ) ){
 
 
 <script>
-// load-comments & posts
 setInterval(function() {
   $(document).ready(function(){
         $("#posts").load("load_comments.php");
@@ -253,7 +252,6 @@ setInterval(function() {
 </script>
 
 <script>
-//load friends requests 
 setInterval(function() {
   $(document).ready(function(){
         $("#freq").load("load_requests.php");
@@ -262,7 +260,6 @@ setInterval(function() {
 </script>
 
 <script>
-//load new people 
 setInterval(function() {
   $(document).ready(function(){
         $("#people").load("load_new_people.php");
@@ -272,7 +269,6 @@ setInterval(function() {
 
 
 <script>
-  //submit comment
   $('form.ajax').on('submit',function(){
     var that = $(this),
         url = that.attr('action'), 
@@ -304,7 +300,6 @@ setInterval(function() {
 
 
 <script>
-  //add/delete likes
 function like(el) {
   if ($(el).hasClass('btn-primary'))
   {
